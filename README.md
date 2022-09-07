@@ -84,7 +84,7 @@ CA_CERTIFICATE="<paste here>"
 
 Notice, the first two environment variables are already assigned and should not be changed. 
 
-Visit the `/overview` page for our Apache Kafka service and copy (<img src="/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/Screen Shot 2022-09-06 at 12.21.11 PM.png" alt="Screen Shot 2022-09-06 at 12.21.11 PM" style="zoom:33%;" />) values from fields **Service URI**, **Access Key**, **Access Certificate**, and **CA Certificate** into corresponding fields in our `.env` file.
+Visit the `/overview` page for our Apache Kafka service and copy (<img src="pics/Screen Shot 2022-09-06 at 12.21.11 PM.png" alt="Screen Shot 2022-09-06 at 12.21.11 PM" style="zoom:33%;" />) values from fields **Service URI**, **Access Key**, **Access Certificate**, and **CA Certificate** into corresponding fields in our `.env` file.
 
 ![certs](pics/certs.png)
 
@@ -169,11 +169,11 @@ Let's view some messages!
 
 Within the Topics tab, click on the topic "transactions" that we had created previously. A "Topic info" modal should appear like so.
 
-![messages](/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/messages.png)
+![messages](pics/messages.png)
 
-Click on <img src="/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/Screen Shot 2022-09-06 at 9.23.39 PM.png" alt="Screen Shot 2022-09-06 at 9.23.39 PM" style="zoom:33%;" /> to get directed to Aiven's Kafka message viewing page. On this page you'll see option "format: binary". Change it to "format: json" and click <img src="/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/Screen Shot 2022-09-06 at 9.34.23 PM.png" alt="Screen Shot 2022-09-06 at 9.34.23 PM" style="zoom:33%;" />. You'll see your messages come through.
+Click on <img src="pics/Screen Shot 2022-09-06 at 9.23.39 PM.png" alt="Screen Shot 2022-09-06 at 9.23.39 PM" style="zoom:33%;" /> to get directed to Aiven's Kafka message viewing page. On this page you'll see option "format: binary". Change it to "format: json" and click <img src="pics/Screen Shot 2022-09-06 at 9.34.23 PM.png" alt="Screen Shot 2022-09-06 at 9.34.23 PM" style="zoom:33%;" />. You'll see your messages come through.
 
-![viewMessages](/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/viewMessages.png)
+![viewMessages](pics/viewMessages.png)
 
 ## Observability and Monitoring
 
@@ -185,17 +185,17 @@ Let's do this thing!
 
 From the `/services` page, click on our Kafka service which will direct you to our Kafka's `overview` tab. Within the overview tab, scroll down until the Service Integrations section is visable.
 
-![service-integations-kafka](/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/service-integations-kafka.png)
+![service-integations-kafka](pics/service-integations-kafka.png)
 
-Click on <img src="/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/Screen Shot 2022-09-07 at 4.34.56 AM.png" alt="Screen Shot 2022-09-07 at 4.34.56 AM" style="zoom:33%;" />. A service integrations modal will appear for my Kafka cluster instance.
+Click on <img src="pics/Screen Shot 2022-09-07 at 4.34.56 AM.png" alt="Screen Shot 2022-09-07 at 4.34.56 AM" style="zoom:33%;" />. A service integrations modal will appear for my Kafka cluster instance.
 
-![metrics](/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/metrics.png)
+![metrics](pics/metrics.png)
 
-Find the "Metrics" card and click on <img src="/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/Screen Shot 2022-09-07 at 4.42.18 AM.png" alt="Screen Shot 2022-09-07 at 4.42.18 AM" style="zoom:33%;" /> below it. Another modal will appear.
+Find the "Metrics" card and click on <img src="pics/Screen Shot 2022-09-07 at 4.42.18 AM.png" alt="Screen Shot 2022-09-07 at 4.42.18 AM" style="zoom:33%;" /> below it. Another modal will appear.
 
-![service-integration-kafka-modal](/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/service-integration-kafka-modal.png)
+![service-integration-kafka-modal](pics/service-integration-kafka-modal.png)
 
-Make sure Existing service is selected and Service name starts with "influx-". Click on <img src="/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/Screen Shot 2022-09-07 at 5.09.12 AM.png" alt="Screen Shot 2022-09-07 at 5.09.12 AM" style="zoom:33%;" />.
+Make sure Existing service is selected and Service name starts with "influx-". Click on <img src="pics/Screen Shot 2022-09-07 at 5.09.12 AM.png" alt="Screen Shot 2022-09-07 at 5.09.12 AM" style="zoom:33%;" />.
 
 We've just set up an Aiven service integration that pulls service metrics from Kafka into InfluxDB.
 
@@ -203,27 +203,27 @@ Next, let's integrate Grafana with InfluxDB to visualize our Kafka service metri
 
 From the `/services` page, click on our Grafana service which will direct you to Grafana's `overview` tab. Within the overview tab, scroll down until the Service Integrations section is visable.
 
-![service-integrations-grafana](/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/service-integrations-grafana.png)
+![service-integrations-grafana](pics/service-integrations-grafana.png)
 
-Click on <img src="/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/Screen Shot 2022-09-07 at 4.34.56 AM.png" alt="Screen Shot 2022-09-07 at 4.34.56 AM" style="zoom:33%;" />. A service integrations modal will appear for my Grafana instance.
+Click on <img src="pics/Screen Shot 2022-09-07 at 4.34.56 AM.png" alt="Screen Shot 2022-09-07 at 4.34.56 AM" style="zoom:33%;" />. A service integrations modal will appear for my Grafana instance.
 
-![Service-Integrations-Grafana-cards](/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/Service-Integrations-Grafana-cards.png)
+![Service-Integrations-Grafana-cards](pics/Service-Integrations-Grafana-cards.png)
 
-Find the "Grafana Metrics Dashboard" card and click on <img src="/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/Screen Shot 2022-09-07 at 4.42.18 AM.png" alt="Screen Shot 2022-09-07 at 4.42.18 AM" style="zoom:33%;" /> below it. Another modal will appear.
+Find the "Grafana Metrics Dashboard" card and click on <img src="pics/Screen Shot 2022-09-07 at 4.42.18 AM.png" alt="Screen Shot 2022-09-07 at 4.42.18 AM" style="zoom:33%;" /> below it. Another modal will appear.
 
-![AAA](/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/AAA.png)
+![AAA](pics/AAA.png)
 
-Make sure Existing service is selected and Service name starts with "influx-". Click on <img src="/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/Screen Shot 2022-09-07 at 5.09.12 AM.png" alt="Screen Shot 2022-09-07 at 5.09.12 AM" style="zoom:33%;" />.
+Make sure Existing service is selected and Service name starts with "influx-". Click on <img src="pics/Screen Shot 2022-09-07 at 5.09.12 AM.png" alt="Screen Shot 2022-09-07 at 5.09.12 AM" style="zoom:33%;" />.
 
 Now, we're fully integrated Kafka => InfluxDB => Grafana.
 
 #### Viewing Metrics in Grafana
 
-From the `/services` page, click on our Grafana service which will direct you to our Grafana's `overview` tab. ![Grafana](/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/Grafana.png)
+From the `/services` page, click on our Grafana service which will direct you to our Grafana's `overview` tab. ![Grafana](pics/Grafana.png)
 
-Take note of your username and password and click on Service URI which will direct you to your Grafana's login page. Login and hover over icon (<img src="/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/Screen Shot 2022-09-07 at 8.37.08 AM.png" alt="Screen Shot 2022-09-07 at 8.37.08 AM" style="zoom:25%;" />) to reveal a list of options on the right. Click on "Browse", then on "Aiven Kafka - kafka-bd8c891 - Resources" and you'll see dashboard chock-full of health metrics for your Kafka instance.
+Take note of your username and password and click on Service URI which will direct you to your Grafana's login page. Login and hover over icon (<img src="pics/Screen Shot 2022-09-07 at 8.37.08 AM.png" alt="Screen Shot 2022-09-07 at 8.37.08 AM" style="zoom:25%;" />) to reveal a list of options on the right. Click on "Browse", then on "Aiven Kafka - kafka-bd8c891 - Resources" and you'll see dashboard chock-full of health metrics for your Kafka instance.
 
-![grafana-dash](/Users/sshaginyan/Desktop/nodejs-kafka-producer/pics/grafana-dash.png)
+![grafana-dash](pics/grafana-dash.png)
 
 We've finally crossed the finish line! We are done! Finito!
 
