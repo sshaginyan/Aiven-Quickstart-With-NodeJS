@@ -20,7 +20,7 @@ In this section we'll be provisioning services Kafka, InfluxDB, and Grafana.
 
 <img src="pics/blankServiceList.png" alt="blankServiceList" />
 
-Next, we'll provision a Kafka cluster. Click on <img src="pics/Screen Shot 2022-09-05 at 11.01.08 AM.png" alt="Screen Shot 2022-09-05 at 11.01.08 AM" style="width: 100px;" /> to provision a new service. You'll be directed to the `/new-service` provisioning page shown below.
+Next, we'll provision a Kafka cluster. Click on <img src="pics/Screen Shot 2022-09-05 at 11.01.08 AM.png" alt="Screen Shot 2022-09-05 at 11.01.08 AM" style="width: 120px;" /> to provision a new service. You'll be directed to the `/new-service` provisioning page shown below.
 
 <img src="pics/newService.png" />
 
@@ -35,7 +35,7 @@ Now there is a lot happening on page! It seems overwhelming at first, but I prom
 
 Easy peasy!
 
-Notice all services (Apache Kafka, InfluxDB, Grafana) that we'll use for this tutorial are listed on this page with Kafka selected by default. Leave all configurations as they are and click on <img src="pics/Screen Shot 2022-09-05 at 12.55.54 PM.png" alt="Screen Shot 2022-09-05 at 12.55.54 PM" style="width: 100px;" />. You'll be directed back to the `/services` page where a Kafka cluster will start provisioning.
+Notice all services (Apache Kafka, InfluxDB, Grafana) that we'll use for this tutorial are listed on this page with Kafka selected by default. Leave all configurations as they are and click on <img src="pics/Screen Shot 2022-09-05 at 12.55.54 PM.png" alt="Screen Shot 2022-09-05 at 12.55.54 PM" style="width: 120px;" />. You'll be directed back to the `/services` page where a Kafka cluster will start provisioning.
 
 ![provisioning](pics/provisioning.png)
 
@@ -53,7 +53,7 @@ Let's get started!
 
 #### Creating a Kafka Topic
 
-First, let's create a brand new Kafka topic called "transactions". From the `/services` page, click on our provisioned Kafka service directing you to your Kafka's  `/overview` page. Click on the "Topics" tab and type "transactions" in the input text field under label "Topic name". Click on <img src="pics/Screen Shot 2022-09-06 at 12.49.17 AM.png" alt="Screen Shot 2022-09-06 at 12.49.17 AM" style="zoom:30%;" />. You have successfully created a Kafka topic called "transactions".
+First, let's create a brand new Kafka topic called "transactions". From the `/services` page, click on our provisioned Kafka service directing you to your Kafka's  `/overview` page. Click on the "Topics" tab and type "transactions" in the input text field under label "Topic name". Click on <img src="pics/Screen Shot 2022-09-06 at 12.49.17 AM.png" alt="Screen Shot 2022-09-06 at 12.49.17 AM" style="width: 70px;" />. You have successfully created a Kafka topic called "transactions".
 
 ![topic](pics/topic.png)
 
@@ -84,7 +84,7 @@ CA_CERTIFICATE="<paste here>"
 
 Notice, the first two environment variables are already assigned and should not be changed. 
 
-Visit the `/overview` page for our Apache Kafka service and copy (<img src="pics/Screen Shot 2022-09-06 at 12.21.11 PM.png" alt="Screen Shot 2022-09-06 at 12.21.11 PM" style="zoom:33%;" />) values from fields **Service URI**, **Access Key**, **Access Certificate**, and **CA Certificate** into corresponding fields in our `.env` file.
+Visit the `/overview` page for our Apache Kafka service and copy (<img src="pics/Screen Shot 2022-09-06 at 12.21.11 PM.png" alt="Screen Shot 2022-09-06 at 12.21.11 PM" style="width: 30px;" />) values from fields **Service URI**, **Access Key**, **Access Certificate**, and **CA Certificate** into corresponding fields in our `.env` file.
 
 ![certs](pics/certs.png)
 
@@ -171,7 +171,7 @@ Within the Topics tab, click on the topic "transactions" that we had created pre
 
 ![messages](pics/messages.png)
 
-Click on <img src="pics/Screen Shot 2022-09-06 at 9.23.39 PM.png" alt="Screen Shot 2022-09-06 at 9.23.39 PM" style="zoom:33%;" /> to get directed to Aiven's Kafka message viewing page. On this page you'll see option "format: binary". Change it to "format: json" and click <img src="pics/Screen Shot 2022-09-06 at 9.34.23 PM.png" alt="Screen Shot 2022-09-06 at 9.34.23 PM" style="zoom:33%;" />. You'll see your messages come through.
+Click on <img src="pics/Screen Shot 2022-09-06 at 9.23.39 PM.png" alt="Screen Shot 2022-09-06 at 9.23.39 PM" style="width: 80px;" /> to get directed to Aiven's Kafka message viewing page. On this page you'll see option "format: binary". Change it to "format: json" and click <img src="pics/Screen Shot 2022-09-06 at 9.34.23 PM.png" alt="Screen Shot 2022-09-06 at 9.34.23 PM" style="width: 120px;" />. You'll see your messages come through.
 
 ![viewMessages](pics/viewMessages.png)
 
@@ -187,15 +187,15 @@ From the `/services` page, click on our Kafka service which will direct you to o
 
 ![service-integations-kafka](pics/service-integations-kafka.png)
 
-Click on <img src="pics/Screen Shot 2022-09-07 at 4.34.56 AM.png" alt="Screen Shot 2022-09-07 at 4.34.56 AM" style="zoom:33%;" />. A service integrations modal will appear for my Kafka cluster instance.
+Click on <img src="pics/Screen Shot 2022-09-07 at 4.34.56 AM.png" alt="Screen Shot 2022-09-07 at 4.34.56 AM" style="width: 120px;" />. A service integrations modal will appear for my Kafka cluster instance.
 
 ![metrics](pics/metrics.png)
 
-Find the "Metrics" card and click on <img src="pics/Screen Shot 2022-09-07 at 4.42.18 AM.png" alt="Screen Shot 2022-09-07 at 4.42.18 AM" style="zoom:33%;" /> below it. Another modal will appear.
+Find the "Metrics" card and click on <img src="pics/Screen Shot 2022-09-07 at 4.42.18 AM.png" alt="Screen Shot 2022-09-07 at 4.42.18 AM" style="width: 120px;" /> below it. Another modal will appear.
 
 ![service-integration-kafka-modal](pics/service-integration-kafka-modal.png)
 
-Make sure Existing service is selected and Service name starts with "influx-". Click on <img src="pics/Screen Shot 2022-09-07 at 5.09.12 AM.png" alt="Screen Shot 2022-09-07 at 5.09.12 AM" style="zoom:33%;" />.
+Make sure Existing service is selected and Service name starts with "influx-". Click on <img src="pics/Screen Shot 2022-09-07 at 5.09.12 AM.png" alt="Screen Shot 2022-09-07 at 5.09.12 AM" style="width: 60px;" />.
 
 We've just set up an Aiven service integration that pulls service metrics from Kafka into InfluxDB.
 
@@ -205,15 +205,15 @@ From the `/services` page, click on our Grafana service which will direct you to
 
 ![service-integrations-grafana](pics/service-integrations-grafana.png)
 
-Click on <img src="pics/Screen Shot 2022-09-07 at 4.34.56 AM.png" alt="Screen Shot 2022-09-07 at 4.34.56 AM" style="zoom:33%;" />. A service integrations modal will appear for my Grafana instance.
+Click on <img src="pics/Screen Shot 2022-09-07 at 4.34.56 AM.png" alt="Screen Shot 2022-09-07 at 4.34.56 AM" style="width: 120px;" />. A service integrations modal will appear for my Grafana instance.
 
 ![Service-Integrations-Grafana-cards](pics/Service-Integrations-Grafana-cards.png)
 
-Find the "Grafana Metrics Dashboard" card and click on <img src="pics/Screen Shot 2022-09-07 at 4.42.18 AM.png" alt="Screen Shot 2022-09-07 at 4.42.18 AM" style="zoom:33%;" /> below it. Another modal will appear.
+Find the "Grafana Metrics Dashboard" card and click on <img src="pics/Screen Shot 2022-09-07 at 4.42.18 AM.png" alt="Screen Shot 2022-09-07 at 4.42.18 AM" style="width: 120px;" /> below it. Another modal will appear.
 
 ![AAA](pics/AAA.png)
 
-Make sure Existing service is selected and Service name starts with "influx-". Click on <img src="pics/Screen Shot 2022-09-07 at 5.09.12 AM.png" alt="Screen Shot 2022-09-07 at 5.09.12 AM" style="zoom:33%;" />.
+Make sure Existing service is selected and Service name starts with "influx-". Click on <img src="pics/Screen Shot 2022-09-07 at 5.09.12 AM.png" alt="Screen Shot 2022-09-07 at 5.09.12 AM" style="width: 60px;" />.
 
 Now, we're fully integrated Kafka => InfluxDB => Grafana.
 
@@ -221,7 +221,7 @@ Now, we're fully integrated Kafka => InfluxDB => Grafana.
 
 From the `/services` page, click on our Grafana service which will direct you to our Grafana's `overview` tab. ![Grafana](pics/Grafana.png)
 
-Take note of your username and password and click on Service URI which will direct you to your Grafana's login page. Login and hover over icon (<img src="pics/Screen Shot 2022-09-07 at 8.37.08 AM.png" alt="Screen Shot 2022-09-07 at 8.37.08 AM" style="zoom:25%;" />) to reveal a list of options on the right. Click on "Browse", then on "Aiven Kafka - kafka-bd8c891 - Resources" and you'll see dashboard chock-full of health metrics for your Kafka instance.
+Take note of your username and password and click on Service URI which will direct you to your Grafana's login page. Login and hover over icon (<img src="pics/Screen Shot 2022-09-07 at 8.37.08 AM.png" alt="Screen Shot 2022-09-07 at 8.37.08 AM" style="width: 30px;" />) to reveal a list of options on the right. Click on "Browse", then on "Aiven Kafka - kafka-bd8c891 - Resources" and you'll see dashboard chock-full of health metrics for your Kafka instance.
 
 ![grafana-dash](pics/grafana-dash.png)
 
