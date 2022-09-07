@@ -25,7 +25,7 @@ while(true) {
     const message = {
 	key: `"${faker.datatype.uuid()}"`,
 	value: JSON.stringify({
-	    // Using faker to manufacture financial transactions
+	    // Using faker to manufacture financial transactions data
 	    timestamp: faker.date.recent(),
 	    account: faker.finance.account(),
 	    accountName: faker.finance.accountName(),
@@ -35,8 +35,8 @@ while(true) {
 	})
     };
 
+    // Log our message before publishing to Kafka
     console.log(message);
-    
     
     // Publishes messages to Kafka on a particular topic
     await producer.send({ topic: process.env.TOPIC, messages: [message] });
