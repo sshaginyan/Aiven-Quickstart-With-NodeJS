@@ -20,7 +20,7 @@ In this section we'll be provisioning services Kafka, InfluxDB, and Grafana.
 
 <img src="pics/blankServiceList.png" alt="blankServiceList" />
 
-Next, we'll provision a Kafka cluster. Click on <img src="pics/Screen Shot 2022-09-05 at 11.01.08 AM.png" alt="Screen Shot 2022-09-05 at 11.01.08 AM" style="width: 140px;" /> to provision a new service. You'll be directed to the `/new-service` provisioning page shown below.
+Next, we'll provision a Kafka cluster. Click on <img src="pics/Screen Shot 2022-09-05 at 11.01.08 AM.png" alt="Screen Shot 2022-09-05 at 11.01.08 AM" style="width: 100px;" /> to provision a new service. You'll be directed to the `/new-service` provisioning page shown below.
 
 <img src="pics/newService.png" />
 
@@ -35,7 +35,7 @@ Now there is a lot happening on page! It seems overwhelming at first, but I prom
 
 Easy peasy!
 
-Notice all services (Apache Kafka, InfluxDB, Grafana) that we'll use for this tutorial are listed on this page with Kafka selected by default. Leave all configurations as they are and click on <img src="pics/Screen Shot 2022-09-05 at 12.55.54 PM.png" alt="Screen Shot 2022-09-05 at 12.55.54 PM" style="width: 120px;" />. You'll be directed back to the `/services` page where a Kafka cluster will start provisioning.
+Notice all services (Apache Kafka, InfluxDB, Grafana) that we'll use for this tutorial are listed on this page with Kafka selected by default. Leave all configurations as they are and click on <img src="pics/Screen Shot 2022-09-05 at 12.55.54 PM.png" alt="Screen Shot 2022-09-05 at 12.55.54 PM" style="width: 100px;" />. You'll be directed back to the `/services` page where a Kafka cluster will start provisioning.
 
 ![provisioning](pics/provisioning.png)
 
